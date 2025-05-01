@@ -2,9 +2,10 @@
   <div id="main">
     <h1>Welcome to <span id="gorb">
         <span>G</span><span>O</span><span>R</span><span>B</span>
-      </span>, the Open-Source and Federated Chat App!</h1>
+      </span>, the <span id="open-source">Open-Source</span> and <span id="federated">Federated</span>
+      Chat App!</h1>
     <NuxtLink class="link" href="/"><s>Go to web client</s></NuxtLink>
-    IT DOESN'T EXIST YET
+    <p id="not-exist">IT DOESN'T EXIST YET</p>
     <p>
       BUT! Check out our <NuxtLink id="git-link" href="https://git.gorb.app/gorb">Git</NuxtLink> to check on our
       progress!
@@ -16,7 +17,7 @@
 
 </script>
 
-<style>
+<style scoped>
 #gorb {
   margin-top: 0.6em;
   text-align: center;
@@ -84,7 +85,34 @@
   }
 }
 
+#open {
+  color: rgb(214, 2, 112);
+}
+
+#hyphen {
+  color: rgb(155, 79, 150);
+}
+
+#source {
+  color: rgb(0, 56, 168);
+}
+
+#open-source {
+  background: linear-gradient(to right, #FE218C, #FED84E, #1CB3F7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#federated {
+  color: rgb(194, 0, 194);
+}
+
+#not-exist {
+  color: red;
+}
+
 #git-link {
-  color: inherit;
+  color: aquamarine;
 }
 </style>
