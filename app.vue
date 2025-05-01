@@ -38,6 +38,8 @@ body {
   margin-left: 3dvw;
   margin-right: 3dvw;
   margin-top: 2dvh;
+  padding-bottom: 2dvh;
+  border-bottom: 1px solid orange;
 }
 
 #navbar a {
