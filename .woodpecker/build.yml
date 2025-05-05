@@ -1,0 +1,20 @@
+steps:
+  - name: build
+    image: node:alpine
+    commands:
+      - npm install -g pnpm
+      - pnpm install
+      - pnpm build
+
+  - name: publish
+    image: debian:12
+    commands:
+      - apt update -y && apt install -y rsync openssh-client
+      - printf "Host *\n  StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+      - ssh-agent bash -c "ssh-add <(echo '$KEY' | base64 -d) && rsync --archive --verbose --compress --hard-links --delete-during --partial --progress ./.output/ root@gorb.app:/var/www/gorb.app && ssh root@gorb.app systemctl restart gorb.app.service"
+    environment:
+      KEY:
+        from_secret: ssh_key
+    when:
+      - branch: main
+        event: push
