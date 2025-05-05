@@ -13,7 +13,8 @@ export default defineNuxtConfig({
         // { property: 'og:image', content: 'missing' },
         { property: 'og:url', content: 'https://gorb.app' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'Gorb' }
+        { property: 'og:site_name', content: 'Gorb' },
+        { property: 'theme-color', content: "#c200c2" }
       ]
     }
   }
