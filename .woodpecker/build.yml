@@ -5,6 +5,9 @@ steps:
       - npm install -g pnpm
       - pnpm install
       - pnpm build
+    when:
+      - event: push
+      - event: pull_request
 
   - name: publish
     image: debian:12
