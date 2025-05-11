@@ -1,9 +1,12 @@
 <template>
   <div id="main">
-    <h1>Welcome to <span id="gorb">
-        <span>G</span><span>O</span><span>R</span><span>B</span>
-      </span>, the <span id="open-source">Open-Source</span> and <span id="federated">Federated</span>
-      Chat App!</h1>
+    <h1>
+      Welcome to <span id="gorb">
+      <span>G</span><span>O</span><span>R</span><span>B</span></span>!</h1>
+    <h2>
+      The <span id="open-source">Open-Source</span> and <span id="federated">Federated</span>
+      Chat Platform!
+    </h2>
     <NuxtLink class="link" href="/"><s>Go to web client</s></NuxtLink>
     <p id="not-exist">IT DOESN'T EXIST YET</p>
     <p>
