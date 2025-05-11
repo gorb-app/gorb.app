@@ -5,16 +5,19 @@ export default defineNuxtConfig({
   modules: ['@nuxt/fonts', '@nuxt/image'],
   app: {
     head: {
-      title: 'Gorb - The Chat App',
+      title: 'Gorb - Open-Source Chat Platform',
       // this is purely used to embed in that other chat app, and similar stuff
       meta: [
-        { property: 'og:title', content: 'Gorb - The Federated Chat App' },
-        { property: 'og:description', content: 'GORB! The open-source and federated chat application!' },
+        { property: 'og:title', content: 'Gorb - Open-Source Chat Platform' },
+        { property: 'og:description', content: 'Gorb is an open-source (and eventually federated) chat platform where you\'ll be able to join and chat in servers, chat privately in DMs, and more.' },
         // { property: 'og:image', content: 'missing' },
         { property: 'og:url', content: 'https://gorb.app' },
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Gorb' },
         { property: 'theme-color', content: "#c200c2" }
+      ],
+      link: [
+        { rel: "canonical", href: "https://gorb.app" }
       ]
     }
   }
