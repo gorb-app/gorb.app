@@ -14,14 +14,6 @@
 </template>
 
 <script lang="ts" setup>
-
-useHead({
-  title: "Gorb",
-  meta: [
-    { name: "description", content: "Welcome to Gorb, the Open-Source Chat App!" }
-  ]
-});
-
 </script>
 
 <style scoped>
