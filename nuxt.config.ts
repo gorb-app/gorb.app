@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://gorb.app' },
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Gorb' },
-        { property: 'theme-color', content: "#c200c2" }
+        { property: 'theme-color', content: "#df5f0b" }
       ],
       link: [
         { rel: "canonical", href: "https://gorb.app" },
