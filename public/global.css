@@ -1,0 +1,6 @@
+.pansexual-gradient {
+  background: linear-gradient(to right, #FE218C, #FED84E, #1CB3F7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

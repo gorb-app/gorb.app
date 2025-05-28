@@ -1,0 +1,31 @@
+/* this file may want to be moved to a /styles folder, or /assets folder, or smth */
+:root {
+  --text-colour: #141210;
+  --background-colour: #f4ebe0;
+  --background-secondary-colour: #efe4db;
+
+  --primary-colour: #f97635;
+  --secondary-colour: #cab39b;
+  --tertiary-colour: #e8ac84;
+  --accent-colour: #ed7a41; 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-colour: #efedec;
+    --background-colour: #201d19;
+    --background-secondary-colour: #1d1915;
+
+    --primary-colour: #f97635;
+    --secondary-colour: #b35618;
+    --tertiary-colour: #7c4018;
+    --accent-colour: #cc764a;
+  }
+}
+
+/* unchanging no matter the theme */
+:root {
+  --text-on-primary-colour: #fff;
+  --text-on-secondary-colour: #fff;
+  --text-on-accent-colour: #fff;
+}

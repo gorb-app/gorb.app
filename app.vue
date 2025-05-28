@@ -1,14 +1,9 @@
 <template>
-  <nav id="navbar">
-    <div id="navbar-left">
-      <a href="/">Home</a>
-    </div>
-    <div id="navbar-right">
-      <NuxtLink href="/"><s>Register</s></NuxtLink>
-      <NuxtLink href="/"><s>Login</s></NuxtLink>
-    </div>
-  </nav>
-  <NuxtPage />
+  <div id="app">
+    <Header />
+    <NuxtPage />
+    <Footer />
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -18,42 +13,27 @@ const gorbBase = ref<string>(useAppConfig().gorbClientBaseURL);
 </script>
 
 <style>
-html,
-body {
+html, body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  color: whitesmoke;
-  background-color: rgb(30, 30, 30);
+  color: var(--text-colour);
+  background-color: var(--background-colour);
   height: 100%;
   margin: 0;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 #main {
   text-align: center;
+  margin-bottom: 32px;
 }
 
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 3dvw;
-  margin-right: 3dvw;
-  margin-top: 2dvh;
-  padding-bottom: 2dvh;
-  border-bottom: 1px solid orange;
-}
-
-#navbar a {
-  text-decoration: none;
-  color: inherit;
-}
-
-#navbar-left,
-#navbar-right {
-  display: flex;
-  gap: 2dvw;
-}
-
-.link {
+.link, a {
   color: inherit;
 }
 </style>

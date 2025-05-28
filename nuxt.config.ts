@@ -3,6 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@nuxt/fonts', '@nuxt/image'],
+  css: [
+    '@/public/variables.css',
+    '@/public/global.css'
+  ],
   app: {
     head: {
       title: 'Gorb - Open-Source Chat Platform',
