@@ -4,14 +4,13 @@
       Welcome to <span id="gorb">
       <span>G</span><span>O</span><span>R</span><span>B</span></span>!</h1>
     <h2>
-      The <span id="open-source">Open-Source</span> and <span id="federated">Federated</span>
+      The <span class="pansexual-gradient">Open-Source</span> and <span id="federated">Federated</span>
       Chat Platform!
     </h2>
     <NuxtLink class="link" href="/"><s>Go to web client</s></NuxtLink>
     <p id="not-exist">IT DOESN'T EXIST YET</p>
     <p>
-      BUT! Check out our <NuxtLink id="git-link" href="https://git.gorb.app/gorb">Git</NuxtLink> to check on our
-      progress!
+      BUT! Check out our <NuxtLink id="git-link" href="https://git.gorb.app/gorb">Git</NuxtLink> to check on our progress!
     </p>
   </div>
 </template>
