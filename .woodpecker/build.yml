@@ -4,7 +4,7 @@ steps:
     commands:
       - npm install -g pnpm
       - pnpm install
-      - pnpm build
+      - pnpm build --prerender
     when:
       - event: push
       - event: pull_request
