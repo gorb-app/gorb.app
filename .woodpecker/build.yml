@@ -14,7 +14,7 @@ steps:
     commands:
       - apt update -y && apt install -y rsync openssh-client
       - printf "Host *\n  StrictHostKeyChecking no" >> /etc/ssh/ssh_config
-      - ssh-agent bash -c "ssh-add <(echo '$KEY' | base64 -d) && rsync --archive --verbose --compress --hard-links --delete-during --partial --progress ./.output/public/ root@gorb.app:/var/www/gorb.app && ssh root@gorb.app systemctl restart gorb.app.service"
+      - ssh-agent bash -c "ssh-add <(echo '$KEY' | base64 -d) && rsync --archive --verbose --compress --hard-links --delete-during --partial --progress ./.output/public/ root@gorb.app:/var/www/gorb.app"
     environment:
       KEY:
         from_secret: ssh_key
