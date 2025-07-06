@@ -14,7 +14,6 @@ export default defineNuxtConfig({
       meta: [
         { property: 'og:title', content: 'Gorb - Open-Source Chat Platform' },
         { property: 'og:description', content: 'Gorb is an open-source (and eventually federated) chat platform where you\'ll be able to join and chat in servers, chat privately in DMs, and more.' },
-        { property: 'og:image', content: '//public/beaver_1.jpg' },
         { property: 'og:url', content: 'https://gorb.app' },
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Gorb' },
@@ -22,7 +21,6 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "canonical", href: "https://gorb.app" },
-        { rel: "icon", href: "//public/beaver_2.png", type: "image/png" }
       ]
     }
   }
